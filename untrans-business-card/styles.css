@@ -1,0 +1,137 @@
+:root {
+    --bg: #0b1220;
+    --surface: #111b31;
+    --surface-light: #f4f7fb;
+    --text: #1a2334;
+    --text-inverse: #f5f8ff;
+    --accent: #2e7cff;
+    --accent-2: #3fd1c2;
+    --border: #d7deeb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: #fff;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+.hero {
+    background: radial-gradient(circle at top right, rgba(63, 209, 194, 0.15), transparent 35%), var(--bg);
+    color: var(--text-inverse);
+    padding: 84px 0;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: #b8c6e5;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.12;
+    margin: 0 0 18px;
+    max-width: 900px;
+}
+
+.hero-subtitle {
+    max-width: 860px;
+    color: #dce5f8;
+    margin: 0 0 30px;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), #4d95ff);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.section {
+    padding: 68px 0;
+}
+
+.section-alt {
+    background: var(--surface-light);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 22px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    font-weight: 500;
+}
+
+.checklist,
+.timeline {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.checklist li,
+.timeline li {
+    margin-bottom: 10px;
+}
+
+.timeline span {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.contacts {
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #fff;
+    max-width: 600px;
+}
+
+.contacts a {
+    color: var(--accent);
+}
+
+.footer {
+    background: var(--surface);
+    color: #d7e0f4;
+    padding: 24px 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 64px 0;
+    }
+
+    .section {
+        padding: 56px 0;
+    }
+}
