@@ -33,6 +33,5 @@ gh repo create untrans-business-card --public --source=. --remote=origin --push
 3. Build and deployment: `Deploy from a branch`.
 4. Branch: `main` + `/ (root)`.
 5. Зберегти, дочекатися публікації.
-
 ## Фото
 На сторінці додані тематичні промислові фото з Pexels (через прямі URL у `index.html`).
