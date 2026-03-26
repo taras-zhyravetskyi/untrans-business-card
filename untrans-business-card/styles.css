@@ -27,7 +27,10 @@ body {
 }
 
 .hero {
-    background: radial-gradient(circle at top right, rgba(63, 209, 194, 0.15), transparent 35%), var(--bg);
+    background:
+        linear-gradient(rgba(11, 18, 32, 0.74), rgba(11, 18, 32, 0.82)),
+        radial-gradient(circle at top right, rgba(63, 209, 194, 0.15), transparent 35%),
+        url('https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
     color: var(--text-inverse);
     padding: 84px 0;
 }
@@ -72,6 +75,12 @@ h1 {
     background: var(--surface-light);
 }
 
+.section-subtitle {
+    margin: -6px 0 24px;
+    color: #4b5c7c;
+    max-width: 760px;
+}
+
 h2 {
     margin-top: 0;
     font-size: clamp(1.6rem, 3vw, 2.2rem);
@@ -90,6 +99,43 @@ h2 {
     border-radius: 14px;
     padding: 18px;
     font-weight: 500;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.photo-card {
+    margin: 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(17, 27, 49, 0.08);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.photo-card figcaption {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    color: #33425f;
+}
+
+.photo-note {
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+.photo-note a {
+    color: var(--accent);
 }
 
 .checklist,

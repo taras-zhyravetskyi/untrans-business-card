@@ -6,6 +6,15 @@
 - `index.html`
 - `styles.css`
 
+## Локальний запуск
+
+```bash
+cd untrans-business-card
+python3 -m http.server 8000
+```
+
+Після цього відкрити: `http://localhost:8000`
+
 ## Як створити окремий GitHub-репозиторій і завантажити сайт
 
 ```bash
@@ -24,3 +33,5 @@ gh repo create untrans-business-card --public --source=. --remote=origin --push
 3. Build and deployment: `Deploy from a branch`.
 4. Branch: `main` + `/ (root)`.
 5. Зберегти, дочекатися публікації.
+## Фото
+На сторінці додані тематичні промислові фото з Pexels (через прямі URL у `index.html`).
